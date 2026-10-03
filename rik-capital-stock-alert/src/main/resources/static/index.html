@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RIK Capital</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><img src="/rik-company-logo.png" alt="RIK Capital logo"></a>
+  <div class="top-actions">
+    <div class="home-search-wrap">
+      <div class="global-search"><span class="search-icon">⌕</span><input id="homeSearch" type="search" placeholder="Search by company name, code or symbol..." autocomplete="off"></div>
+      <div id="homeResults" class="home-results"></div>
+    </div>
+    <a class="stock-alert-link" href="/stock-alert.html">Stock Alert</a>
+    
+    <div class="account-wrap">
+      <button id="accountButton" class="account-button" type="button" aria-expanded="false" title="Login">◉</button>
+      
+      <div id="accountMenu" class="account-menu">
+        <div id="accountStatus" class="account-status">Not logged in</div>
+        <button id="loginOpen" type="button">Login</button>
+        <button id="logoutBtn" type="button" class="hidden">Log out</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero"><div class="hero-copy"><div class="eyebrow">STRATEGIC INVESTOR RELATIONS</div>
+<h1>Unlocking Value Through<br>Strategic Investor Relations</h1>
+<p>Helping companies build institutional trust, enhance market visibility and create long-term shareholder value.</p>
+<a class="primary" href="#services">Our Services</a><a class="secondary" href="#about">About Us</a></div></section>
+<section class="stats"><div><b>20+ Years</b><span>Capital Market Industry Experience</span></div><div><b>₹ 32,000 Cr+</b><span>Market Capitalization Being Managed</span></div><div><b>Pan India Client Base</b><span>Expertise Across All Sectors</span></div></section>
+<section id="services" class="services"><h2>Our Core Services</h2><div class="service-row"><div><b>↗ Equity Story</b><span>Capital Markets Positioning</span></div><div><b>♟ Institutional Outreach</b><span>Investor Engagement & Relations</span></div><div><b>◉ Market Perception</b><span>Brand & Market Visibility</span></div></div></section>
+<section class="home-tools"><div class="tool-card"><span class="tool-icon">★</span><div><h3>Stock Alerts</h3><p>Select up to five companies and submit your contact details to receive investor-relations follow-up.</p></div><a href="/stock-alert.html" class="primary small">Create Stock Alert</a></div><div class="tool-card"><span class="tool-icon">⌕</span><div><h3>Company Search</h3><p>Search the listed-company database by company name, NSE symbol or BSE code.</p></div><button class="secondary small" type="button" onclick="document.getElementById('homeSearch').focus()">Search Companies</button></div></section>
+</main>
+<footer>© 2026 Rik Consultancy & Advisory Services LLP <span>Privacy Policy　|　Terms of Use　|　Disclaimer</span></footer>
+
+<div id="loginModal" class="modal-backdrop hidden"><div class="login-modal"><button class="modal-close" type="button" id="loginClose">×</button><h2>Login</h2><p>Enter your name and email to continue.</p><label for="loginName">Name</label><input id="loginName" type="text" placeholder="Your name"><label for="loginEmail">Email ID</label><input id="loginEmail" type="email" placeholder="you@example.com"><div id="loginError" class="error"></div><button id="loginBtn" class="primary full" type="button">Login</button></div></div>
+<script src="/home.js"></script>
+</body></html>
