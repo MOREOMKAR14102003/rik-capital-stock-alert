@@ -2,8 +2,8 @@
 
 WORKDIR /app
 
-COPY pom.xml .
-COPY src ./src
+COPY rik-capital-stock-alert/pom.xml .
+COPY rik-capital-stock-alert/src ./src
 
 RUN mvn clean package -DskipTests
 
